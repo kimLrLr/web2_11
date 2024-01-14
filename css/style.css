@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+/* reset end */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mo_btn{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        padding:20px;
+    }
+
+    .mo_btn{
+        display:block;
+    }
+
+    header .menu_wrap{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section_2{
+        padding: 150px 20px;
+    }
+
+    .section_2 .title_2{
+        font-size: 50px;
+    }
+
+    .con_wrap_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .con_wrap_2 .con_2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.menu_wrap{
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu_wrap li{
+    margin-left: 80px;
+}
+/* header end */
+
+.section_1{
+    height: 850px;
+    background-color: lightgray;
+}
+/* section_1 end */
+
+.section_2{
+    padding: 150px 300px;
+}
+
+@media screen and (max-width:1024px){
+    .section_2{
+        padding: 150px 100px;
+    }
+    .section_2 .con_2{
+        height: 300px;
+    }
+}
+
+.title_2{
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.con_wrap_2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.con_2{
+    width: 30%;
+    height: 400px;
+    background-color: rgb(193, 206, 244);
+}
+/* section_2 end */
+
+.section_3{
+    height: 500px;
+    background-color: rgb(193, 206, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+/* position은 3d형태로 겹치거나 해야하면 사용!
+    아니라면 그냥 flex 쓰거나 하기!
+    ex) 헤더랑 배경이미지 겹쳐지는 경우같은 특수한 경우에나 포지션 사용 */
